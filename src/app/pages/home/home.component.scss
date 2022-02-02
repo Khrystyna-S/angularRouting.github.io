@@ -1,0 +1,87 @@
+@import '../../shared/styles/base';
+@import '../../shared/styles/variables';
+@import '../../shared/styles/mixins';
+
+.container{
+    @include name ( 80%, 500px );
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.prohibited-box, .task-box, .users-box{
+    @include name ( 300px, 300px );
+    border-radius: 5px;
+
+    .box-title{
+        @include name ( 100%, 40px );
+        background-color: $main-color;
+        border-radius: 5px 5px 0 0;
+        text-align: center;
+        line-height: 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .box-content1{
+        @include name ( 100%, 250px );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-img1{
+        @include name ( 80%, 200px );
+        background-size: 250px;
+        background-repeat: no-repeat;
+        background-image: url(../../../assets/image/Screenshot_4.png);
+    }
+
+    .box-content2{
+        @include name ( 100%, 250px );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-img2{
+        @include name ( 80%, 200px );
+        background-size: 250px;
+        background-repeat: no-repeat;
+        background-image: url(../../../assets/image/Screenshot_1.png);
+    }
+
+    .box-content3{
+        @include name ( 100%, 250px );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+    .box-img3{
+        @include name ( 80%, 180px );
+        background-size: 250px;
+        background-repeat: no-repeat;
+        background-image: url(../../../assets/image/Screenshot_5.png);
+    }
+
+    .box-button{
+        @include name ( 100%, 50px );
+        background-color: $main-color;
+        border-radius: 0 0 5px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnDetalis{
+        @include name ( 80%, 30px );
+        background-color: $btn-color;
+        border: 1px solid hsl(81, 148, 107);
+        border-radius: 5px;
+        color: white;
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+}

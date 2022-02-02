@@ -1,0 +1,99 @@
+@import '../../../shared/styles/base';
+@import '../../../shared/styles/variables';
+@import '../../../shared/styles/mixins';
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+.container-input{
+    width: 500px;
+    height: 350px;
+}
+input{
+    @include name ( 500px, 30px );
+    border-radius: 3px;
+    padding: 5px;
+    color: rgb(122, 120, 120);
+    border: 1px solid gainsboro;
+}
+input:focus{
+    outline-color: lightskyblue;
+}
+label{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: rgb(94, 85, 85);
+    line-height: 50px;
+    font-weight: bold;
+}
+#addUser,#editUser{
+    @include name ( 90px, 40px );
+    background-color: white;
+    border: 1px solid $btn-color;
+    color: $btn-color;
+    border-radius: 3px;
+    margin-top: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#addUser:hover,#editUser:hover{
+    color: white;
+    background-color: $btn-color;
+}
+
+.container-table{
+    @include name ( 500px, 350px );
+    margin-left: 40px;
+    padding-top: 50px;
+}
+#table{
+    width: 100%;
+    line-height: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid gainsboro;
+    border-right-color: white;
+    border-left-color: white;
+    border-collapse: collapse;
+}
+td{
+    min-width: 60px;
+    text-align: center;
+}
+tr{
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+#edit{
+    @include name ( 50px, 25px );
+    background-color: $btn-colorEdit;
+    color: rgb(27, 31, 29);
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: 0;
+    box-shadow: 0 1px 2px rgb(116, 95, 3);
+}
+#delete{
+    @include name ( 60px, 25px );
+    background-color: $btn-colorDelite;
+    color: rgb(27, 31, 29);
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: 0;
+    box-shadow: 0 1px 2px rgb(192, 8, 8);
+}
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid $btn-color; 
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442;
+}
+
+

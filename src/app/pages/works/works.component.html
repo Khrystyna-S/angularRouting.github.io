@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="lastWorks">
+        <div class="lastHome">
+            <div>Last works >>> </div>
+            <div [routerLink]="[ 'prohibitedWords' ]" routerLinkActive="active" class="works">Cenzor</div>
+            <div [routerLink]="[ 'usersList' ]" routerLinkActive="active" class="works">Users</div>
+            <div [routerLink]="[ 'taskList' ]" routerLinkActive="active" class="works">Task</div>
+        </div>
+        <div class="backHome">
+            <div [routerLink]="[ '' ]" routerLinkActive="active" class="back">Back to >>> Home</div>
+        </div>
+    </div>
+    <hr>
+</div>
+<router-outlet></router-outlet>
+

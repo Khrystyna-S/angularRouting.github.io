@@ -1,0 +1,86 @@
+@import '../../../shared/styles/base';
+@import '../../../shared/styles/variables';
+@import '../../../shared/styles/mixins';
+
+.cenzor-box{
+    @include name ( 650px, 290px );
+    background-color: $main-color;
+    box-shadow: 0 1px 2px rgba(191, 192, 190, 0.836);
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.cenzor-text{
+    @include name ( 100%, 40px );
+    padding: 9px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.cenzor-words{
+    display: flex;
+}
+#badWords{
+    color: rgba(220, 20, 60, 0.863);
+    padding-left: 5px;
+}
+.cenzor-input{
+    @include name ( 100%, 40px );
+    padding: 5px 9px 0 9px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+#inputWord{
+    @include name ( 420px, 30px );
+    outline: none;
+    border: 0;
+    box-shadow: 0 1px 2px rgba(191, 192, 190, 0.836);
+    border-radius: 3px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-right: 5px;
+}
+#btnAdd,#btnReset,#btnCenzor{
+    @include name ( 100px, 30px );
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: white;
+}
+#btnAdd{
+    background-color: $btn-colorEdit;
+    box-shadow: 0 1px 2px rgba(161, 154, 46, 0.836);
+    margin-right: 5px;
+}
+#btnReset{
+    background-color: $btn-colorDelite;
+    box-shadow: 0 1px 2px rgba(148, 37, 22, 0.836);
+}
+.cenzor-area{
+    padding: 5px 9px 0 9px;
+}
+#area{
+    resize: none;
+    outline: none;
+    border: 0;
+    box-shadow: 0 1px 2px rgba(191, 192, 190, 0.836);
+    border-radius: 3px;
+    padding: 6px;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+.cenzor-button{
+    width: 100%;
+    padding: 5px 9px 0 9px;
+}
+#btnCenzor{
+    @include name ( 100%, 40px );
+    background-color: $btn-color;
+}
+
